@@ -2,9 +2,6 @@ trigger OrderStatusTrigger on Order (before insert, before update, after insert,
 
     if (Trigger.isInsert || Trigger.isUpdate){
         if(Trigger.isBefore){
-        System.debug(Trigger.new);
-        System.debug(Trigger.old);
-        //OrderHandlerClass.OrderHasProducts(Trigger.new);
         OrderHandlerClass.OrderHasProducts(Trigger.new);
         }
         if(Trigger.isAfter){
