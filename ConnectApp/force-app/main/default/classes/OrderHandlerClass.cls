@@ -44,7 +44,6 @@ public with sharing class OrderHandlerClass {
                                     Priority = 'Normale',
                                     IsReminderSet = true,
                                     ReminderDateTime = Date.today().addDays(5),
-                                    IsReminderSet=true,
                                     WhatId  = a.Id));
         
            }
