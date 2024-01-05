@@ -42,7 +42,9 @@ public with sharing class OrderHandlerClass {
                                     TaskSubtype ='Call',
                                     Status = 'Nouvelle',
                                     Priority = 'Normale',
-                                    ActivityDate = Date.today().addDays(5),
+                                    IsReminderSet = true,
+                                    ReminderDateTime = Date.today().addDays(5),
+                                    IsReminderSet=true,
                                     WhatId  = a.Id));
         
            }
